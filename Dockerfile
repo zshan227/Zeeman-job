@@ -7,6 +7,6 @@ ADD https://www.free-css.com/assets/files/free-css-templates/download/page264/da
 WORKDIR/var/www/html
 RUN unzip daraz.zip
 RUN cp -rvf markups-daraz/* .
-RUn rm -rf __MACOSX markups-daraz daraz.zip
+RUN rm -rf __MACOSX markups-daraz daraz.zip
 CMD ["/usr/sbin/httpd", "-D",  "FOREGROUND"]
 EXPOSE 80
